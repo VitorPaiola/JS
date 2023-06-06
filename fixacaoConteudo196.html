@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Fixação Conteúdo 196</title>
+
+		<script>
+
+			function corAmarela() {
+				document.getElementById('campo').style.background = "#FFFF00"
+			}
+
+			function alteraCor() {
+				var conteudo = document.getElementById('campo').value
+
+				if(conteudo.length < 3) {
+					document.getElementById('campo').style.background = "#FF0000"
+				} else {
+					document.getElementById('campo').style.background = "#00FF00"
+				}
+			}
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<input id="campo" type="text" onfocus="corAmarela()" onblur="alteraCor()">	
+
+	</body>
+
+</html>
